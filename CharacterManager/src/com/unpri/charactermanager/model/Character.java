@@ -44,6 +44,7 @@ public class Character {
     private int calculateBaseAttack() {
         return 10 + (level * 5);     // contoh: level 5 → Attack = 35
     }
+
         // ===== GETTER: cara AMAN membaca nilai atribut private dari luar =====
     public int getId() { return id; }
     public String getName() { return name; }
@@ -76,13 +77,5 @@ public class Character {
                ", hp=" + hitPoints +
                ", atk=" + attackPower + '}';
     }
-        // ===== equals(): membandingkan ISI DATA, bukan alamat memori =====
-    // Dua Character dianggap "sama" jika NAMA-nya identik (case-sensitive)
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;                    // optimasi: jika memang object yang sama persis
-        if (!(obj instanceof Character)) return false;    // jika bukan Character, pasti tidak sama
-        Character other = (Character) obj;                // casting aman karena sudah dicek instanceof
-        return this.name.equals(other.name);               // bandingkan isi atribut name (String punya equals sendiri)
-    }
+
 }   // kurung kurawal penutup CLASS Character — pastikan jumlah buka/tutup seimbang!
