@@ -1,0 +1,6 @@
+d:\$RECYCLE.BIN\S-1-5-21-2628327905-3385257097-3348039251-1001\$RUBIE76\javavisual-tp03-253303621216-main\javavisual-tp03-253303621216-\CharacterManager\src\Main.java
+d:\$RECYCLE.BIN\S-1-5-21-2628327905-3385257097-3348039251-1001\$RUBIE76\javavisual-tp03-253303621216-main\javavisual-tp03-253303621216-\CharacterManager\src\com\unpri\charactermanager\model\Character.java
+d:\$RECYCLE.BIN\S-1-5-21-2628327905-3385257097-3348039251-1001\$RUBIE76\javavisual-tp03-253303621216-main\javavisual-tp03-253303621216-\CharacterManager\src\com\unpri\charactermanager\model\CharacterManager.java
+d:\$RECYCLE.BIN\S-1-5-21-2628327905-3385257097-3348039251-1001\$RUBIE76\javavisual-tp03-253303621216-main\javavisual-tp03-253303621216-\CharacterManager\src\com\unpri\charactermanager\model\CharacterType.java
+d:\$RECYCLE.BIN\S-1-5-21-2628327905-3385257097-3348039251-1001\$RUBIE76\javavisual-tp03-253303621216-main\javavisual-tp03-253303621216-\CharacterManager\src\com\unpri\charactermanager\view\AppTheme.java
+d:\$RECYCLE.BIN\S-1-5-21-2628327905-3385257097-3348039251-1001\$RUBIE76\javavisual-tp03-253303621216-main\javavisual-tp03-253303621216-\CharacterManager\src\com\unpri\charactermanager\view\MainWindow.java
