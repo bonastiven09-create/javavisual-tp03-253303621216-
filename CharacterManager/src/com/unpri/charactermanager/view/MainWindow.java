@@ -103,6 +103,18 @@ public class MainWindow extends JFrame {
         return box;
     }
 
+    private double hitungRataRataLevel() {
+        if (characterList.isEmpty()) {
+            return 0;
+        }
+
+        int total = 0;
+        for (Character c : characterList) {
+            total += c.getLevel();
+        }
+        return (double) total / characterList.size();
+    }
+
     private CharacterType hitungRoleUtama() {
         int warrior = 0;
         int mage = 0;
@@ -133,18 +145,6 @@ public class MainWindow extends JFrame {
         if (max == mage) return CharacterType.MAGE;
         if (max == archer) return CharacterType.ARCHER;
         return CharacterType.HEALER;
-    }
-
-    private double hitungRataRataLevel() {
-        if (characterList.isEmpty()) {
-            return 0;
-        }
-
-        int total = 0;
-        for (Character c : characterList) {
-            total += c.getLevel();
-        }
-        return (double) total / characterList.size();
     }
 
     private JScrollPane createListArea() {
@@ -221,12 +221,10 @@ public class MainWindow extends JFrame {
         JLabel info = new JLabel("Total: " + characterList.size() + " karakter  |  Siap");
         info.setFont(AppTheme.FONT_MONO);
         info.setForeground(AppTheme.TEXT_MUTED);
-        info.setHorizontalAlignment(SwingConstants.LEFT);
 
         JLabel version = new JLabel(APP_VERSION);
         version.setFont(AppTheme.FONT_MONO);
         version.setForeground(AppTheme.TEXT_MUTED);
-        version.setHorizontalAlignment(SwingConstants.RIGHT);
 
         status.add(info, BorderLayout.WEST);
         status.add(version, BorderLayout.EAST);

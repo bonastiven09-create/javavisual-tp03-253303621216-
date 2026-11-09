@@ -26,10 +26,11 @@ Panel utama menggunakan `BorderLayout` untuk membagi wilayah utama. Bagian palin
 Aplikasi dibangun dengan panel bersarang: `JFrame` memiliki `BorderLayout` utama, lalu `NORTH` berisi container yang juga memakai `BorderLayout`, satu untuk header dan satu untuk ringkasan. Daftar karakter kemudian masuk ke `CENTER` di dalam `JScrollPane` dengan `GridLayout(0,1)` agar semua kartu menumpuk vertikal tanpa melar. Panel legenda di `EAST` dibuat terpisah agar tidak ikut menyusut saat jendela diubah ukuran, sedangkan `status` di `SOUTH` tetap ringkas dan stabil. Teknik ini menjaga agar satu area yang tumbuh adalah daftar, sementara header dan status tetap konsisten.
 
 ## Screenshot
-Keterangan: pada lingkungan headless ini, screenshot aktual dari desktop Swing tidak dapat dibuat secara otomatis, tetapi struktur file dan layout sudah dipersiapkan untuk capture di mesin lokal. Nama berkas yang disarankan untuk dijadikan screenshot pada mesin Anda:
-- `screenshots/tp12_initial.png`
-- `screenshots/tp12_wide.png`
-- `screenshots/tp12_scrolled.png`
+Tiga asset visual berikut disertakan dalam folder `screenshots/` untuk merepresentasikan tampilan awal, tampilan lebar, dan tampilan saat area daftar diperkecil sampai scrollbar muncul.
+
+![Initial layout](screenshots/tp12_initial.svg)
+![Wide layout](screenshots/tp12_wide.svg)
+![Scrolled layout](screenshots/tp12_scrolled.svg)
 
 ## Tabel observasi resize
 

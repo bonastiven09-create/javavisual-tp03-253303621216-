@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <rect width="900" height="650" fill="#121826"/>
+  <rect x="0" y="0" width="900" height="62" fill="#0d0d1a"/>
+  <text x="20" y="38" font-family="Arial, sans-serif" font-size="24" fill="#f4f4ff">Character Manager</text>
+  <text x="760" y="38" font-family="Arial, sans-serif" font-size="18" fill="#d4af37">8 karakter</text>
+
+  <rect x="20" y="80" width="860" height="90" rx="10" fill="#1a1f2d"/>
+  <rect x="30" y="90" width="390" height="52" rx="8" fill="#121826" stroke="#ffffff" stroke-opacity="0.2"/>
+  <text x="46" y="123" font-family="Arial, sans-serif" font-size="13" fill="#9d9dbf">Total</text>
+  <text x="46" y="145" font-family="Arial, sans-serif" font-size="18" fill="#f4f4ff">8</text>
+
+  <rect x="440" y="90" width="390" height="52" rx="8" fill="#121826" stroke="#ffffff" stroke-opacity="0.2"/>
+  <text x="456" y="123" font-family="Arial, sans-serif" font-size="13" fill="#9d9dbf">Rata-rata</text>
+  <text x="456" y="145" font-family="Arial, sans-serif" font-size="18" fill="#f4f4ff">4.5</text>
+
+  <rect x="30" y="160" width="390" height="52" rx="8" fill="#121826" stroke="#ffffff" stroke-opacity="0.2"/>
+  <text x="46" y="193" font-family="Arial, sans-serif" font-size="13" fill="#9d9dbf">Role utama</text>
+  <text x="46" y="214" font-family="Arial, sans-serif" font-size="18" fill="#f4f4ff">WARRIOR</text>
+
+  <rect x="440" y="160" width="390" height="52" rx="8" fill="#121826" stroke="#ffffff" stroke-opacity="0.2"/>
+  <text x="456" y="193" font-family="Arial, sans-serif" font-size="13" fill="#9d9dbf">Status</text>
+  <text x="456" y="214" font-family="Arial, sans-serif" font-size="18" fill="#f4f4ff">Siap</text>
+
+  <rect x="20" y="220" width="660" height="330" rx="10" fill="#1a1f2d"/>
+  <rect x="32" y="232" width="636" height="26" rx="4" fill="#d46a5e"/>
+  <rect x="32" y="264" width="636" height="26" rx="4" fill="#7d85ff"/>
+  <rect x="32" y="296" width="636" height="26" rx="4" fill="#46b7a6"/>
+  <rect x="32" y="328" width="636" height="26" rx="4" fill="#d46a5e"/>
+  <rect x="32" y="360" width="636" height="26" rx="4" fill="#7d85ff"/>
+  <rect x="32" y="392" width="636" height="26" rx="4" fill="#46b7a6"/>
+
+  <rect x="710" y="220" width="170" height="330" rx="10" fill="#1a1f2d"/>
+  <text x="730" y="250" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#f4f4ff">Legenda Role</text>
+  <rect x="730" y="270" width="110" height="20" rx="4" fill="#d46a5e"/>
+  <text x="742" y="286" font-family="Arial, sans-serif" font-size="12" fill="#f4f4ff">WARRIOR</text>
+  <rect x="730" y="308" width="110" height="20" rx="4" fill="#7d85ff"/>
+  <text x="742" y="324" font-family="Arial, sans-serif" font-size="12" fill="#f4f4ff">MAGE</text>
+  <rect x="730" y="346" width="110" height="20" rx="4" fill="#46b7a6"/>
+  <text x="742" y="362" font-family="Arial, sans-serif" font-size="12" fill="#f4f4ff">ARCHER</text>
+  <rect x="730" y="384" width="110" height="20" rx="4" fill="#7dcf75"/>
+  <text x="742" y="400" font-family="Arial, sans-serif" font-size="12" fill="#f4f4ff">HEALER</text>
+
+  <rect x="0" y="606" width="900" height="44" fill="#0d0d1a"/>
+  <text x="20" y="634" font-family="Courier New, monospace" font-size="12" fill="#9d9dbf">Total: 8 karakter  |  Siap</text>
+  <text x="822" y="634" font-family="Courier New, monospace" font-size="12" fill="#9d9dbf">v0.5</text>
+</svg>
