@@ -41,18 +41,10 @@ public class MainWindow extends JFrame {
         getContentPane().setBackground(AppTheme.BG_MAIN);
         setLayout(new BorderLayout());
 
-        add(createNorthPanel(), BorderLayout.NORTH);
+        add(createHeaderPanel(), BorderLayout.NORTH);
         add(createListArea(), BorderLayout.CENTER);
         add(createLegendPanel(), BorderLayout.EAST);
         add(createStatusPanel(), BorderLayout.SOUTH);
-    }
-
-    private JPanel createNorthPanel() {
-        JPanel north = new JPanel(new BorderLayout());
-        north.setBackground(AppTheme.BG_MAIN);
-        north.add(createHeaderPanel(), BorderLayout.NORTH);
-        north.add(createSummaryPanel(), BorderLayout.CENTER);
-        return north;
     }
 
     private JPanel createHeaderPanel() {
@@ -71,80 +63,6 @@ public class MainWindow extends JFrame {
         header.add(title, BorderLayout.WEST);
         header.add(count, BorderLayout.EAST);
         return header;
-    }
-
-    private JPanel createSummaryPanel() {
-        JPanel summary = new JPanel(new GridLayout(2, 2, 10, 8));
-        summary.setBackground(AppTheme.BG_MAIN);
-        summary.setBorder(BorderFactory.createEmptyBorder(0, 16, 10, 16));
-
-        summary.add(createMetricPanel("Total", String.valueOf(characterList.size())));
-        summary.add(createMetricPanel("Rata-rata", String.format("%.1f", hitungRataRataLevel())));
-        summary.add(createMetricPanel("Role utama", hitungRoleUtama().name()));
-        summary.add(createMetricPanel("Status", "Siap"));
-        return summary;
-    }
-
-    private JPanel createMetricPanel(String title, String value) {
-        JPanel box = new JPanel(new BorderLayout());
-        box.setBackground(AppTheme.BG_MAIN);
-        box.setBorder(AppTheme.CARD_BORDER);
-
-        JLabel titleLabel = new JLabel(title);
-        titleLabel.setFont(AppTheme.FONT_MONO);
-        titleLabel.setForeground(AppTheme.TEXT_MUTED);
-
-        JLabel valueLabel = new JLabel(value);
-        valueLabel.setFont(AppTheme.FONT_BODY.deriveFont(Font.BOLD));
-        valueLabel.setForeground(AppTheme.TEXT_MAIN);
-
-        box.add(titleLabel, BorderLayout.NORTH);
-        box.add(valueLabel, BorderLayout.CENTER);
-        return box;
-    }
-
-    private CharacterType hitungRoleUtama() {
-        int warrior = 0;
-        int mage = 0;
-        int archer = 0;
-        int healer = 0;
-
-        for (Character c : characterList) {
-            switch (c.getType()) {
-                case WARRIOR:
-                    warrior++;
-                    break;
-                case MAGE:
-                    mage++;
-                    break;
-                case ARCHER:
-                    archer++;
-                    break;
-                case HEALER:
-                    healer++;
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        int max = Math.max(Math.max(warrior, mage), Math.max(archer, healer));
-        if (max == warrior) return CharacterType.WARRIOR;
-        if (max == mage) return CharacterType.MAGE;
-        if (max == archer) return CharacterType.ARCHER;
-        return CharacterType.HEALER;
-    }
-
-    private double hitungRataRataLevel() {
-        if (characterList.isEmpty()) {
-            return 0;
-        }
-
-        int total = 0;
-        for (Character c : characterList) {
-            total += c.getLevel();
-        }
-        return (double) total / characterList.size();
     }
 
     private JScrollPane createListArea() {
@@ -221,12 +139,10 @@ public class MainWindow extends JFrame {
         JLabel info = new JLabel("Total: " + characterList.size() + " karakter  |  Siap");
         info.setFont(AppTheme.FONT_MONO);
         info.setForeground(AppTheme.TEXT_MUTED);
-        info.setHorizontalAlignment(SwingConstants.LEFT);
 
         JLabel version = new JLabel(APP_VERSION);
         version.setFont(AppTheme.FONT_MONO);
         version.setForeground(AppTheme.TEXT_MUTED);
-        version.setHorizontalAlignment(SwingConstants.RIGHT);
 
         status.add(info, BorderLayout.WEST);
         status.add(version, BorderLayout.EAST);
